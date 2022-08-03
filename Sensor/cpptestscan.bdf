@@ -1,0 +1,9 @@
+------- cpptestscan v.10.5.2.20211029B3134 (cpptesttrace) -------
+working_dir=C:\Users\86138\Desktop\test\Sensor
+project_name=Sensor
+arg=gcc
+arg=-g
+arg=-I.
+arg=-o
+arg=sensor.exe
+arg=sensor.c
