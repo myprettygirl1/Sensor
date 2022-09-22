@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        git(url: 'https://github.com/myprettygirl1/Juliet.git', branch: 'main')
+        git(url: 'https://github.com/myprettygirl1/FlowAnalysis.git', branch: 'main')
       }
     }
 
