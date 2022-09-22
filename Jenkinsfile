@@ -1,10 +1,15 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('Build') {
       steps {
-        sh '''cpptestcli -data "C:\\Program Files\\Jenkins\\workspace" -bdf "C:\\Program Files\\Jenkins\\Sensor\\cpptestscan.bdf" 
-cpptestcli -data "C:\\Program Files\\Jenkins\\workspace" -resource "Sensor" -config "builtin://Recommended Rules" -report %WORKSPACE%/%BUILD_ID%'''
+        git(url: 'https://github.com/myprettygirl1/Juliet.git', branch: 'main')
+      }
+    }
+
+    stage('Tests') {
+      steps {
+        bat '.bat'
       }
     }
 
