@@ -9,7 +9,7 @@ pipeline {
 
     stage('Tests') {
       steps {
-        bat 'cpptesttrace make cpptestcli -data "%workspace%/cpptest_workspace" -bdf "%workspace%/cpptestscan.bdf" -resource "Sensor" -config "builtin://Recommended Rules" -report "%workspace%/report"'
+        bat 'cd %workspace" make clean cpptesttrace make cpptestcli -data "%workspace%/cpptest_workspace" -bdf "%workspace%/cpptestscan.bdf" -resource "FlowAnalysisi" -config "builtin://Recommended Rules" -report "%workspace%/report"'
       }
     }
 
